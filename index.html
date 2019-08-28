@@ -1,162 +1,197 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset="utf-8" />
-	<title>各种流量卡合集</title>
-	<script src="/js/jquery-1.4.2.js"></script>
-	<script src="/js/jquery-1.8.3.min.js"></script>
-	
-	<style type="text/css">
-	 
-		#div1{
-			text-align:center;
-			text-decoration:underline;
-		
+<meta charset="utf-8" />
+<title>福利合集</title>
+<script src="/js/jquery-1.4.2.js"></script>
+<script src="/js/jquery-1.8.3.min.js"></script>
+
+<style type="text/css">
+.beijing {
+	background-image: url("1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	background-attachment: fixed
+}
+div.neirong{
+  			width: 100%;
+  			height: 100%;
+ 			
+ 			 background-color: #ffffff;
+  			border: 1px solid black;
+ 			 /* for IE */
+ 			 filter:alpha(opacity=60);
+ 			 /* CSS3 standard */
+ 			 opacity:0.6;
 		}
-              #div2{
-			text-align:center;
-			 
-		
-		}
-		 #div3{
-			text-align:center;
-			 
-		
-		}
-		#div4{
-			text-align:center;
-			 
-		
-		}
-	
-	</style>
+
+#div1 {
+	text-align: center;
+	border: 3px solid #921AFF ;
+}
+
+#div2 {
+	text-align: center;
+	border: 2px solid #28FF28
+}
+
+#div3 {
+	text-align: center;
+	border: 2px solid #FF5809
+}
+</style>
 
 
-	 <link rel="stylesheet" href="css/normalize.css">
-
-    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css" media="screen"
+	type="text/css" />
 </head>
 <body>
-  
-	<div id="div1">
-		<h1>
-	<a href="http://t.cn/AiH7K9CT">联通卡</a><br>
-	<a href="http://t.cn/AiHNWMQM">移动卡</a><br>
-	<a href="http://t.cn/AiH7S1IM">电信卡</a><br>
-			<h1>
-	</div>
-	<div id="div2">
-	
-	<h3>本网站不卖卡,只提供卡的申请地址,</h3>
-	
-		<h3>都是官方的,只是把申请链接拿来整合一下,</h3>
-		
-		<h3>实时更新</h3>
-		<br>
-	</div>
-		<div id="div4">
+	<div class="beijing">
+	<div class="neirong">
+
+		<div id="div1">
+			<h1>官方流量卡汇总</h1>
 			<h2>
-			 
-	<a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=kj8tsplt">阿里云服务器优惠券</a>(官方券,最高2000元)<br></h2>
-			
-			
-		</div></br>
-			
-			
-	<script language="javascript" type="text/javascript" src="https://cdn.staticfile.org/jquery/1.7.2/jquery.min.js"></script>
-<script type = "text/javascript">
+				<a href="http://t.cn/AiH7K9CT">联通卡</a><br> <a
+					href="http://t.cn/AiHNWMQM">移动卡</a><br> <a
+					href="http://t.cn/AiH7S1IM">电信卡</a><br>
+				<h2>
 
-var mouseSum = 0;
-jQuery(document).ready(function($) {
-    $("body").click(function(e) {
-        var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善");
-        var $i = $("<span/>").text(a[mouseSum]);
-        mouseSum = (mouseSum + 1) % a.length;
-        var x = e.pageX,
-        y = e.pageY;
-        $i.css({
-            "z-index": 9999999,
-            "top": y - 20,
-            "left": x,
-            "position": "absolute",
-            "font-weight": "bold",
-            "color": "#6651ff"
-        });
-        $("body").append($i);
-        $i.animate({
-            "top": y - 180,
-            "opacity": 0
-        },
-        1500,
-        function() {
-            $i.remove();
-        });
-    });
-}); 
-</script>	
-			
-
-			
-			
-			
-	<script color="0,0,0" opacity="0.5" count="99" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.js" type="text/javascript" charset="utf-8"></script>
-	
-	
-	<strong>
-<center>
-<span id="showsectime" style="color:#ff0000;"></span>
-<script type="text/javascript">
-function NewDate(str) { 
-str = str.split('-'); 
-var date = new Date(); 
-date.setUTCFullYear(str[0], str[1] - 1, str[2]); 
-date.setUTCHours(0, 0, 0, 0); 
-return date; 
-} 
-function showsectime() {
-var birthDay =NewDate("2018-08-16");
-var today=new Date();
-var timeold=today.getTime()-birthDay.getTime();
-var sectimeold=timeold/1000
-var secondsold=Math.floor(sectimeold);
-var msPerDay=24*60*60*1000; var e_daysold=timeold/msPerDay;
-var daysold=Math.floor(e_daysold);
-var e_hrsold=(daysold-e_daysold)*-24;
-var hrsold=Math.floor(e_hrsold);
-var e_minsold=(hrsold-e_hrsold)*-60;
-var minsold=Math.floor((hrsold-e_hrsold)*-60); var seconds=Math.floor((minsold-e_minsold)*-60).toString();
-document.getElementById("showsectime").innerHTML = "本站已苟活"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
-setTimeout(showsectime, 1000);
-}showsectime();
-</script>
-<strong>
-<ml>
-</ml></strong></center><strong>
-</strong>
-		
-		
-		
-		
-		
-				
-			
-			
-			
-		<div style="text-align:center;clear:both">
-<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
-<script src="/follow.js" type="text/javascript"></script>
-</div>
-  <div id="whale"></div>
-
-  <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
-
-  <script src="js/index.js"></script>
-			
-	<div id="div3">		
-友链:<a href="http://api.imiliy.cn/anningdd/">安柠鲸鱼</a>(不了解误点,风险)<br>
-	<a href="http://java52.353ds.com//">福利站</a><br><br> 
-提示:友链页面所有权归原作者所有,非本站信息,页面跳转后的一切信息与本站无关!!慎点!!
+					<h6>本网站不卖卡,只提供卡的申请地址, 都是官方的,只是把申请链接拿来整合一下, 实时更新</h6>
+					<br>
 		</div>
-		
+		</br>
+
+
+		<div id="div2">
+			<h2>
+
+				<a
+					href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=kj8tsplt">阿里云服务器优惠券</a>(官方券,最高2000元)<br>
+			</h2>
+
+
+		</div>
+		</br>
+
+
+
+
+
+
+
+
+
+
+		<div id="div3">
+			友链:<a href="http://api.imiliy.cn/anningdd/">安柠鲸鱼</a>(不了解误点,风险)<br>
+			<a href="http://java52.353ds.com//">福利站</a><br> <br>
+			提示:友链页面所有权归原作者所有,非本站信息,页面跳转后的一切信息与本站无关!!慎点!!
+		</div>
+
+		</br> </br> </br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- 运行时间 -->
+		<script color="0,0,0" opacity="0.5" count="99"
+			src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.js"
+			type="text/javascript" charset="utf-8"></script>
+		<strong>
+			<center>
+				<span id="showsectime" style="color: #ff0000;"></span>
+				<script type="text/javascript">
+				function NewDate(str) {
+					str = str.split('-');
+					var date = new Date();
+					date.setUTCFullYear(str[0], str[1] - 1, str[2]);
+					date.setUTCHours(0, 0, 0, 0);
+					return date;
+				}
+				function showsectime() {
+					var birthDay = NewDate("2018-08-16");
+					var today = new Date();
+					var timeold = today.getTime() - birthDay.getTime();
+					var sectimeold = timeold / 1000
+					var secondsold = Math.floor(sectimeold);
+					var msPerDay = 24 * 60 * 60 * 1000;
+					var e_daysold = timeold / msPerDay;
+					var daysold = Math.floor(e_daysold);
+					var e_hrsold = (daysold - e_daysold) * -24;
+					var hrsold = Math.floor(e_hrsold);
+					var e_minsold = (hrsold - e_hrsold) * -60;
+					var minsold = Math.floor((hrsold - e_hrsold) * -60);
+					var seconds = Math.floor((minsold - e_minsold) * -60)
+							.toString();
+					document.getElementById("showsectime").innerHTML = "本站已苟活"
+							+ daysold + "天" + hrsold + "小时" + minsold + "分"
+							+ seconds + "秒";
+					setTimeout(showsectime, 1000);
+				}
+				showsectime();
+			</script>
+				<strong> <ml> </ml></strong>
+			</center> <strong> </strong>
+			<div style="text-align: center; clear: both">
+				<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+				<script src="/follow.js" type="text/javascript"></script>
+			</div>
+			<div id="whale"></div> <script
+				src='http://codepen.io/assets/libs/fullpage/jquery.js'></script> <script
+				src="js/index.js"></script>
+
+
+</div>	
+</div>
+
+
+
+
+	<!-- 点击特效 -->
+	<script language="javascript" type="text/javascript"
+		src="https://cdn.staticfile.org/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		var mouseSum = 0;
+		jQuery(document).ready(
+				function($) {
+					$("body").click(
+							function(e) {
+								var a = new Array("富强", "民主", "文明", "和谐", "自由",
+										"平等", "公正", "法治", "爱国", "敬业", "诚信",
+										"友善");
+								var $i = $("<span/>").text(a[mouseSum]);
+								mouseSum = (mouseSum + 1) % a.length;
+								var x = e.pageX, y = e.pageY;
+								$i.css({
+									"z-index" : 9999999,
+									"top" : y - 20,
+									"left" : x,
+									"position" : "absolute",
+									"font-weight" : "bold",
+									"color" : "#6651ff"
+								});
+								$("body").append($i);
+								$i.animate({
+									"top" : y - 180,
+									"opacity" : 0
+								}, 1500, function() {
+									$i.remove();
+								});
+							});
+				});
+	</script>
+
 </body>
 </html>
